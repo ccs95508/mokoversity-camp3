@@ -26,7 +26,7 @@ var game = (function() {
         
         }
         else{
-            timeoutVar = setTimeout(start, 5);
+            timeoutVar = setTimeout(start, 3);
             count = count+1;
         }
 

@@ -1,11 +1,11 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
-
 <body>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -53,8 +53,14 @@
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
-	<div>勒哩勒~~~</div>
-	<div id="main"></div>
-	<div id="scores"></div>
+
+<div class="row">
+        <div class="col-md-12">
+                        <div id="main"><canvas id="game"></canvas></div>
+        </div>
+</div>
+
+<script type="text/javascript" src="java.js"></script>
+
 </body>
 </html>
