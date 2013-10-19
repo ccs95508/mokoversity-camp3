@@ -1,28 +1,29 @@
 var game = (function() {
 
+        var canvas = document.getElementById('game'),
+            ctx = canvas.getContext('2d');
+
+            canvas.width = 1000;
+            canvas.height = 1000;
+
+
     function start(){
         var timeoutVar,
             count=0,
-            canvas = document.getElementById('game'),
-            ctx = canvas.getContext('2d'),
-            x = Math.floor(Math.random() *200), 
-    	    y = Math.floor(Math.random() *500),
+            x = Math.floor(Math.random() *800), 
+    	    y = Math.floor(Math.random() *800),
     	    r = Math.floor(Math.random() *100);
 
-
-        canvas.width = 1000;
-        canvas.height = 1000;
-
-        ctx.fillStyle = 'yellow';
+        ctx.fillStyle = "#26e60d";
         ctx.beginPath();
         ctx.arc(x, y, r, 0, Math.PI * 2 , true);
         ctx.fill();
 
-        if(count>=10){
+        if(count>=25){
         
         }
         else{
-            timeoutVar = setTimeout(start, 1000);
+            timeoutVar = setTimeout(start, 300);
             count = count+1;
         }
 
