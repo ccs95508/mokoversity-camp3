@@ -1,4 +1,5 @@
 var game = (function() {
+
     function start(){
         var timeoutVar,
             count=0,
@@ -16,6 +17,14 @@ var game = (function() {
         ctx.beginPath();
         ctx.arc(x, y, r, 0, Math.PI * 2 , true);
         ctx.fill();
+
+        if(count>=10){
+        
+        }
+        else{
+            timeoutVar = setTimeout(start, 1000);
+            count = count+1;
+        }
 
         }
 return{
