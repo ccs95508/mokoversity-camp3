@@ -13,7 +13,7 @@ var game = (function() {
             x = Math.floor(Math.random() *800), 
     	    y = Math.floor(Math.random() *800),
     	    r = Math.floor(Math.random() *100);
-            c = Math.floor(Math.random() *6);
+            c = Math.floor(Math.random() *7);
 
         if(c==1){
             ctx.fillStyle = "#26e60d";
@@ -37,6 +37,10 @@ var game = (function() {
         else
             if(c==5){
             ctx.fillStyle = "white";
+        }
+        else
+            if(c==5){
+            ctx.fillStyle = "black";
         }
 
         ctx.beginPath();
